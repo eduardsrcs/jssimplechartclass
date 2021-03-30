@@ -21,12 +21,21 @@ export class Chart {
     this.setColors()
   }
 
+  changeChart(name, value) {
+    this.charts.map(chart => {
+      if(chart.name === name) {
+        chart.value = value
+      }
+    })
+    this.renderCharts()
+  }
+
   setColors(){
     const colors = document.querySelectorAll('.progrbar')
     if(colors) {
       colors.forEach(el => {
         let estyle = (getComputedStyle(el).backgroundColor) // https://zellwk.com/blog/css-values-in-js/
-        el.style.color = estyle.substr(estyle.indexOf('(') + 1).replace(')', '').split(',').reduce((a, b) => a + parseInt(b), 0) / 3 > 127 ? this.darkColor = 'darkBrown' : this.lightColor
+        el.style.color = estyle.substr(estyle.indexOf('(') + 1).replace(')', '').split(',').reduce((a, b) => a + parseInt(b), 0) / 3 > 127 ? this.darkColor : this.lightColor
       })
     }
   }
