@@ -1,0 +1,20 @@
+.progrbar{
+  border: 2px solid grey;
+  border-radius: 4px;
+  height: 20px;
+  line-height: 20px;
+  text-align: center;
+  transition: 1s;
+}
+
+.pcard{
+  display: flex;
+  justify-content: space-between;
+}
+
+.ptitle{
+  width: 60%;
+}
+ .pbar{
+   width: 40%;
+ }
