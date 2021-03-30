@@ -16,7 +16,7 @@ export class Chart {
   renderCharts(){
     this.c.innerHTML = ''
     this.charts.forEach(chart => {
-      this.c.innerHTML += `<div class="pcard"><div class="ptitle">${chart.name || '?'}</div><div class="pbar"><div class="progrbar" style="width:${chart.value || 0}%;background-color:${chart.color || '#393'};">${chart.value || 0}%</div></div></div>`
+      this.c.innerHTML += `<div class="pcard"><div class="charttitle">${chart.title || '(none)'}</div><div class="ptitle">${chart.name || '?'}</div><div class="prdescr">${chart.desc || '...'}</div><div class="pbar"><div class="progrbar" style="width:${chart.value || 0}%;background-color:${chart.color || '#393'};">${chart.value || 0}%</div></div></div>`
     });
     this.setColors()
   }
