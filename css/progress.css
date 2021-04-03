@@ -1,3 +1,5 @@
+/* https://stackoverflow.com/questions/16541112/overlapping-text-in-css-how-do-i-change-it */
+
 body{
   transition: .3s
 }
@@ -44,4 +46,18 @@ body.night{
 #nightthemesw{
   background-color: #0a0;
   color: #ccc;
+  border-radius: 4px;
+  border: 1px solid green;
+  outline: none;
+  cursor: pointer;
 }
+
+#nightthemesw:active{
+  background-color: #090;
+}
+
+body.night #nightthemesw{
+  background-color: #040;
+  color: #555;
+}
+
