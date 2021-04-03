@@ -1,3 +1,9 @@
+body.night{
+  filter: invert(100%);
+  background-color: #333;
+  transition: .3s
+}
+
 .progrbar{
   border: 2px solid grey;
   border-radius: 4px 10px 10px 4px;
@@ -15,6 +21,8 @@
 
 .charttitle{
   width: 10%;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .ptitle{
