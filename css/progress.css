@@ -1,7 +1,11 @@
-body.night{
-  filter: invert(100%);
-  background-color: #333;
+body{
   transition: .3s
+}
+
+body.night{
+  /* filter: invert(100%); */
+  background-color: #333;
+  color: #ccc;
 }
 
 .progrbar{
@@ -35,4 +39,9 @@ body.night{
 
 .pbar{
   width: 15%;
+}
+
+#nightthemesw{
+  background-color: #0a0;
+  color: #ccc;
 }
