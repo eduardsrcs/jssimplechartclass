@@ -10,6 +10,7 @@ function renderTableData(data) {
       <td>${el.name}</td>
       <td>${el.title}</td>
       <td>${el.desc}</td>
+      <td>${el.paths || ''}</td>
       <td>${el.stat}</td>
     </tr>`
     })
